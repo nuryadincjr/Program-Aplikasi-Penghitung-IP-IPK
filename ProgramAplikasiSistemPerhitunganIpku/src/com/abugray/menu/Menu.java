@@ -45,9 +45,6 @@ import static com.abugray.menu.component.smesterCB;
 import static com.abugray.menu.home.almt;
 import static com.abugray.menu.home.email;
 import static com.abugray.menu.home.hp;
-import static com.abugray.menu.home.nm;
-import static com.abugray.menu.home.npm;
-import static com.abugray.menu.home.prodi;
 import static com.abugray.menu.home.pt;
 import static com.abugray.menu.home.site;
 import java.awt.Color;
@@ -139,6 +136,7 @@ public class Menu extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         homeMi = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         exitMi = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
@@ -444,6 +442,17 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         jMenu1.add(jMenuItem1);
+
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/abugray/icon/document-save-symbolic.symbolic_1.png"))); // NOI18N
+        jMenuItem2.setMnemonic('s');
+        jMenuItem2.setText("Tambah User");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2);
         jMenu1.add(jSeparator1);
 
         exitMi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/abugray/icon/application-exit-symbolic.symbolic_1.png"))); // NOI18N
@@ -601,7 +610,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_khsL1MouseClicked
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
-        clear();
+//        clear();
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jCheckBoxMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem1ActionPerformed
@@ -617,7 +626,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxMenuItem3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        clear();
+//        clear();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void countTBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_countTBActionPerformed
@@ -711,12 +720,16 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        saveAll();
+//        saveAll();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        saveAll();
+//        saveAll();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -755,7 +768,7 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel avatarL;
+    public static javax.swing.JLabel avatarL;
     public static javax.swing.JMenuItem countMI;
     public static javax.swing.JButton countTB;
     private javax.swing.JLabel dateL;
@@ -780,6 +793,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JPanel jPanel1;
@@ -896,70 +910,70 @@ public class Menu extends javax.swing.JFrame {
         return valueOf;
     }
 
-    public static void clear() {
-        if (home.saveL.isShowing()) {
-            try {
-                home.pt.setText("");
-                home.almt.setText("");
-                home.hp.setText("");
-                home.site.setText("");
-                home.email.setText("");
-
-                home.nm.setText("");
-                home.npm.setText("");
-                home.prodi.setText("");
-            } catch (Exception e) {
-            }
-        } else {
-            try {
-                component.mk1.setText("");
-                component.mk2.setText("");
-                component.mk3.setText("");
-                component.mk4.setText("");
-                component.mk5.setText("");
-                component.mk6.setText("");
-                component.mk7.setText("");
-                component.mk8.setText("");
-                component.mk9.setText("");
-
-                component.sks1TF.setText("");
-                component.sks2TF.setText("");
-                component.sks3TF.setText("");
-                component.sks4TF.setText("");
-                component.sks5TF.setText("");
-                component.sks6TF.setText("");
-                component.sks7TF.setText("");
-                component.sks8TF.setText("");
-                component.sks9TF.setText("");
-
-                component.nk1.setText("");
-                component.nk2.setText("");
-                component.nk3.setText("");
-                component.nk4.setText("");
-                component.nk5.setText("");
-                component.nk6.setText("");
-                component.nk7.setText("");
-                component.nk8.setText("");
-                component.nk9.setText("");
-
-                component.nilai1TF.setText("");
-                component.nilai2TF.setText("");
-                component.nilai3TF.setText("");
-                component.nilai4TF.setText("");
-                component.nilai5TF.setText("");
-                component.nilai6TF.setText("");
-                component.nilai7TF.setText("");
-                component.nilai8TF.setText("");
-                component.nilai9TF.setText("");
-
-                component.ipk.setText("");
-                component.ips.setText("");
-                component.nk.setText("");
-                component.sks.setText("");
-            } catch (Exception e) {
-            }
-        }
-    }
+//    public static void clear() {
+//        if (home.saveL.isShowing()) {
+//            try {
+//                home.pt.setText("");
+//                home.almt.setText("");
+//                home.hp.setText("");
+//                home.site.setText("");
+//                home.email.setText("");
+//
+//                home.nm.setText("");
+//                home.npm.setText("");
+//                home.prodi.setText("");
+//            } catch (Exception e) {
+//            }
+//        } else {
+//            try {
+//                component.mk1.setText("");
+//                component.mk2.setText("");
+//                component.mk3.setText("");
+//                component.mk4.setText("");
+//                component.mk5.setText("");
+//                component.mk6.setText("");
+//                component.mk7.setText("");
+//                component.mk8.setText("");
+//                component.mk9.setText("");
+//
+//                component.sks1TF.setText("");
+//                component.sks2TF.setText("");
+//                component.sks3TF.setText("");
+//                component.sks4TF.setText("");
+//                component.sks5TF.setText("");
+//                component.sks6TF.setText("");
+//                component.sks7TF.setText("");
+//                component.sks8TF.setText("");
+//                component.sks9TF.setText("");
+//
+//                component.nk1.setText("");
+//                component.nk2.setText("");
+//                component.nk3.setText("");
+//                component.nk4.setText("");
+//                component.nk5.setText("");
+//                component.nk6.setText("");
+//                component.nk7.setText("");
+//                component.nk8.setText("");
+//                component.nk9.setText("");
+//
+//                component.nilai1TF.setText("");
+//                component.nilai2TF.setText("");
+//                component.nilai3TF.setText("");
+//                component.nilai4TF.setText("");
+//                component.nilai5TF.setText("");
+//                component.nilai6TF.setText("");
+//                component.nilai7TF.setText("");
+//                component.nilai8TF.setText("");
+//                component.nilai9TF.setText("");
+//
+//                component.ipk.setText("");
+//                component.ips.setText("");
+//                component.nk.setText("");
+//                component.sks.setText("");
+//            } catch (Exception e) {
+//            }
+//        }
+//    }
 
     private void warna(JPanel p, JPanel p2, JPanel p3) {
         p.setBackground(Color.red);
@@ -1042,9 +1056,9 @@ public class Menu extends javax.swing.JFrame {
         henpon = hp.getText();
         website = site.getText();
         mail = email.getText();
-        nama = nm.getText();
-        nopm = npm.getText();
-        programs = prodi.getText();
+//        nama = nm.getText();
+//        nopm = npm.getText();
+//        programs = prodi.getText();
         try {
             st = koneksi.createStatement();
             try {
@@ -1067,19 +1081,19 @@ public class Menu extends javax.swing.JFrame {
         }
     }
 
-    private void saveAll() {
-        if(home.saveL.isShowing()){
-            try {
-                save();
-            } catch (Exception e) {
-            }
-        }else if(component.hitungL.isShowing()){
-            try {
-                saveSmester();
-            } catch (Exception e) {
-            }
-        }
-    }
+//    private void saveAll() {
+//        if(home.saveL.isShowing()){
+//            try {
+//                save();
+//            } catch (Exception e) {
+//            }
+//        }else if(component.hitungL.isShowing()){
+//            try {
+//                saveSmester();
+//            } catch (Exception e) {
+//            }
+//        }
+//    }
     
     public void save(String smester, String nilai){
         String mkk1, mkk2, mkk3, mkk4, mkk5, mkk6, mkk7, mkk8, mkk9;
